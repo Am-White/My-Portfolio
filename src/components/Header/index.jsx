@@ -13,23 +13,23 @@ function Header () {
 
     <Stack direction="row" className="menu-items">
       <div>
-        <a href="/PageOne">
-          Item 1
+        <a href="/AboutMe">
+          About Me
         </a>
       </div>
       <div>
-        <a href="/PageTwo">
-          Item 2
+        <a href="/ExperienceAndSkills">
+        Experience And Skills
         </a>
       </div >
       <div>
-        <a href="/PageThree">
-          Item 3
+        <a href="/Projects">
+          Projects
         </a>
       </div>
       <div>
-        <a href="/PageFour">
-          Item 4
+        <a href="/ContactInfo">
+          Contact Info
         </a>
       </div>
     </Stack>
