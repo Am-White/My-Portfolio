@@ -1,39 +1,73 @@
 
 .App-header {
+  background-color: rgb(25, 24, 24);
   min-height: 15vh;
-  padding-left: 15px;
-  padding-right: 15px;
-  justify-items: row;
+  display: flex;
+  align-items: center;
   justify-content: space-between;
+  color: white;
+  position: sticky;
+  padding-left: 25px;
+  padding-right: 25px;
+  z-index: 1;
 }
 
 .header {
-  background-color: white;
   display: flex;
   align-items: center;
   justify-content: left;
-  font-size: calc(20px + 2vmin);
-  color: #282c34;
+  font-size: calc(40px + 2vmin);
+  letter-spacing: 5px;
+  text-decoration: none;
+  color: darkgray;
 }
 
-.menu-items {
-  max-width: 50vh;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.header:hover {
+  text-shadow:
+  0 0 7px #fff,
+  0 0 10px #fff,
+  0 0 21px #fff,
+  0 0 42px rgb(120, 2, 141),
+  0 0 82px rgb(120, 2, 141),
+  0 0 92px rgb(120, 2, 141),
+  0 0 102px rgb(120, 2, 141),
+  0 0 151px rgb(120, 2, 141);
 }
 
-.menu-items div {
-  margin: 15px;
+.header-icon:hover{
+  cursor: pointer;
 }
 
-.main {
-  background-color: #282c34;
-  min-height: 85vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.header-tag{
+  text-decoration: none;
   color: white;
-  
+  font-size: 20px;
+  letter-spacing: 5px;
+}
+
+.header-home-tag{
+  text-decoration: none;
+  color: grey;
+  font-size: 30px;
+  letter-spacing: 5px;
+}
+
+.header-home-tag:hover {
+  text-shadow:
+  0 0 7px #fff,
+  0 0 10px #fff,
+  0 0 21px #fff,
+  0 0 42px rgb(120, 2, 141),
+  0 0 82px rgb(120, 2, 141),
+  0 0 92px rgb(120, 2, 141),
+  0 0 102px rgb(120, 2, 141),
+  0 0 151px rgb(120, 2, 141);
+}
+
+.header-tag:hover, .header-home-tag:hover{
+  text-decoration: underline;
+}
+
+.header-list{
+  text-align: center;
 }

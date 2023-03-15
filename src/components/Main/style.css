@@ -1,0 +1,58 @@
+*{
+  font-family: 'Bebas Neue', cursive;
+}
+
+.main {
+  background-color: #282c34;
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  
+}
+
+.home-video{
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+}
+
+
+.main-header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
+}
+
+.main-p1 {
+  font-family: 'Bebas Neue', cursive;
+  color: #fff;
+}
+
+.main-p3 {
+  float: right;
+  color: white;
+  letter-spacing: 3px;
+  padding-top: 25px;
+  text-shadow:
+  0 0 7px #fff,
+  0 0 10px #fff,
+  0 0 21px #fff,
+  0 0 42px rgb(120, 2, 141),
+  0 0 82px rgb(120, 2, 141),
+  0 0 92px rgb(120, 2, 141),
+  0 0 102px rgb(120, 2, 141),
+  0 0 151px rgb(120, 2, 141);
+}
+
+.main-p3:hover{
+  /* glow on hover?? */
+}

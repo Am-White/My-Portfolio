@@ -13,6 +13,7 @@ import Projects from './components/Pages/Projects';
 import ContactInfo from './components/Pages/ContactInfo';
 import Footer from './components/Footer';
 
+
 function App() {
   return (
     <>
