@@ -17,9 +17,7 @@ function Projects () {
     <div className="projects-main">
         <div className="projects-container">
         <Stack direction="column" className="projects-stack">
-          <div className="projects-header">
-          <Typography className="projects-title" variant="h2"> PROJECTS AND SITES</Typography>
-          </div>
+          <Typography className="projects-title" variant="h1" style={{ fontFamily: 'Bebas Neue, cursive', letterSpacing: '1px'}}> PROJECTS AND SITES</Typography>
           <br/>
           <Box sx={{ flexGrow: 1 }} >
             <Grid container spacing={2} >

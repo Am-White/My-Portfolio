@@ -25,6 +25,7 @@
 }
 
 .bio-p4 a:hover{
+  cursor: pointer;
   text-shadow:
   0 0 7px #fff,
   0 0 10px #fff,
@@ -52,6 +53,7 @@
 }
 
 /* EXPERIENCE AND SKILLS PAGE */
+/*///////////////////////////*/
 .ens-main{
   background-color: #282c34;
   min-height: 85vh;
@@ -70,6 +72,7 @@
 
 
 /* Projects page */
+/*//////////////*/
 .projects-main{
 background-color: #282c34;
 min-height: 85vh;
@@ -104,4 +107,20 @@ color: white;
 .projects-card{
   /* display: flex; */
   width: 100px;
+}
+
+/* Contact Page */
+/*//////////////*/
+.contact-box{
+  background-color: #c1bec1;
+  display: flex;
+  padding: 25px;
+  text-align: center;
+  margin: 15px;
+  border-radius: 5px;
+}
+
+.contact-btn{
+  width: 100%;
+  border-radius: 5px;
 }

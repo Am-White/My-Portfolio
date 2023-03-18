@@ -42,8 +42,11 @@ function AboutMe () {
         </Typography>
           <Typography className="bio-p2" variant="h1" style={{ fontFamily: 'Bebas Neue, cursive', letterSpacing: '3px'}}>Amethyst White</Typography>
           <br/>
-          <Typography className="bio-p3" style={{ fontFamily: 'Bebas Neue, cursive', letterSpacing: '1px'}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque molestie odio ut massa blandit auctor. Nam maximus iaculis nunc et pharetra. Etiam in tortor a mi aliquam semper in quis nisl. Donec ac feugiat augue. Pellentesque at felis eu est pharetra tincidunt sed vitae nibh. Proin nec enim tincidunt, venenatis magna vel, varius felis. Curabitur vel pharetra nunc, id maximus lacus. Suspendisse pharetra eros sit amet enim volutpat dignissim. Quisque porta bibendum augue.
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          <Typography className="bio-p3" variant="subtitle1" style={{ fontFamily: 'Bebas Neue, cursive', letterSpacing: '1px', textIndent:'10px'}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque molestie odio ut massa blandit auctor. 
+          <br/>
+           Nam maximus iaculis nunc et pharetra. Etiam in tortor a mi aliquam semper in quis nisl. Donec ac feugiat augue. Pellentesque at felis eu est pharetra tincidunt sed vitae nibh. Proin nec enim tincidunt, venenatis magna vel, varius felis. Curabitur vel pharetra nunc, id maximus lacus. Suspendisse pharetra eros sit amet enim volutpat dignissim. 
+           <br />
+           Quisque porta bibendum augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           </Typography>
           <br/>
           <br/>
@@ -69,8 +72,13 @@ function AboutMe () {
                   <Typography className="bio-p2"  variant="h1" style={{ fontFamily: 'Bebas Neue, cursive', letterSpacing: '3px'}}>Amethyst White</Typography>
                   <div component="img"  className="bio-img-sm" ></div>
                   <br/>
-                  <Typography className="bio-p3" style={{ fontFamily: 'Bebas Neue, cursive', letterSpacing: '1px'}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque molestie odio ut massa blandit auctor. Nam maximus iaculis nunc et pharetra. Etiam in tortor a mi aliquam semper in quis nisl. Donec ac feugiat augue. Pellentesque at felis eu est pharetra tincidunt sed vitae nibh. Proin nec enim tincidunt, venenatis magna vel, varius felis. Curabitur vel pharetra nunc, id maximus lacus. Suspendisse pharetra eros sit amet enim volutpat dignissim. Quisque porta bibendum augue.
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  <Typography className="bio-p3" variant="subtitle1" style={{ fontFamily: 'Bebas Neue, cursive', letterSpacing: '1px'}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque molestie odio ut massa blandit auctor. 
+                  <br/>
+                  <br />
+                  Nam maximus iaculis nunc et pharetra. Etiam in tortor a mi aliquam semper in quis nisl. Donec ac feugiat augue. Pellentesque at felis eu est pharetra tincidunt sed vitae nibh. Proin nec enim tincidunt, venenatis magna vel, varius felis. Curabitur vel pharetra nunc, id maximus lacus. Suspendisse pharetra eros sit amet enim volutpat dignissim. 
+                  <br />
+                  <br />
+                  Quisque porta bibendum augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                   </Typography>
                   <br/>
                   <br/>
