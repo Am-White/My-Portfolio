@@ -104,7 +104,10 @@ function ContactInfo () {
           type='submit' 
           value='Submit' 
           style={{ fontFamily: 'Bebas Neue, cursive', letterSpacing: '3px'}} 
-          disabled={!isDirty || !isValid} >
+          disabled={!isDirty || !isValid} 
+          onClick={() => {
+            alert('Email Sent!');
+          }}>
             Submit
           </Button>
       </form>

@@ -89,25 +89,120 @@ color: white;
 
 }
 
-.projects-stack{
-  /* display: flex;
-  text-align: center;
-  justify-content: center; */
+.card-text{
+  padding: 15px;
 }
 
-.projects-header{
-
-
+.card-btn{
+  width: 100%;
+ background-color: transparent;
+ border-radius: 5px;
+ border: 3px solid rgba(173, 123, 183, 0.5);
+}
+.card-btn:hover{
+  cursor: pointer;
+  background-color: rgba(173, 123, 183, 0.5);
+  transition-delay: 0.2s;
 }
 
-/* .projects-title{
- width: 500px;
-} */
-
-.projects-card{
-  /* display: flex; */
-  width: 100px;
+.card-live-btn {
+  width: 100%;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
 }
+
+.card-live-border {
+  font-size: large;
+  background-color: rgba(173, 123, 183, 0.2);
+  border: 3px solid rgba(66, 9, 77, 0.2);
+  padding:5px;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.card-live-border:hover{
+  cursor: pointer;
+  text-shadow:
+  0 0 7px #fff,
+  0 0 10px #fff,
+  0 0 21px #fff,
+  0 0 42px rgb(120, 2, 141),
+  0 0 82px rgb(120, 2, 141),
+  0 0 92px rgb(120, 2, 141),
+  0 0 102px rgb(120, 2, 141),
+  0 0 151px rgb(120, 2, 141);
+}
+
+.card-live-btn:hover{
+  box-shadow:
+  0 0 2px #fff,
+  0 0 5px #fff,
+  0 0 5px #fff,
+  0 0 6px rgb(138, 82, 148),
+  0 0 8px rgb(138, 82, 148),
+  0 0 11px rgb(138, 82, 148),
+  0 0 15px rgb(138, 82, 148),
+  0 0 18px rgb(138, 82, 148);
+}
+
+
+.card-live-btn .fake-border {
+  background: rgb(219, 182, 227);
+  
+  border-radius: 5px;
+  position: absolute;
+  transition: .15s all ease;
+}
+
+.card-live-btn .left, .card-live-btn .right {
+  width: 3px;
+  height: 100%;
+}
+
+.card-live-btn .top, .card-live-btn .bottom {
+  height: 3px;
+  width: 100%;
+}
+
+.card-live-btn .left {
+  top: 100%;
+  transition-delay: 0ms;
+}
+
+.card-live-btn .right {
+  top: -100%;
+  right: 0%;
+  transition-delay: 300ms;
+}
+
+.card-live-btn:hover .left, .card-live-btn:hover .right {
+  top: 0%;
+}
+
+.card-live-btn .top {
+  left: -100%;
+  top: 0;
+  transition-delay: 150ms;
+}
+
+.card-live-btn .bottom {
+  bottom: 0%;
+  left: 100%;
+  transition-delay: 450ms;
+}
+
+.card-live-btn:hover .top, .card-live-btn:hover .bottom {
+  left: 0%;
+}
+
+
+
+.card-btn{
+  width: 50%;
+  background-color: transparent;
+}
+
 
 /* Contact Page */
 /*//////////////*/
