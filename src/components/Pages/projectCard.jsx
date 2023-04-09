@@ -9,9 +9,6 @@ import Paper from '@mui/material/Paper';
 import "./style.css";
 
 // TODO:
-// Screen Shot and add in multiple photos (dropbox folder for links?)
-// Add links, title, description
-
 //https://codesandbox.io/s/1tj5pm?file=/demo.js
 
 const projects = [
