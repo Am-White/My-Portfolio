@@ -89,9 +89,9 @@ function AboutMe () {
                     <br/>
                     <br/>
                 <Typography variant="body" className="bio-p4" > 
-                  <a href="/"> Check this shit out --></a>
+                  <a href="/ContactInfo"> Reach out to me --></a>
                   <br/>
-                  <a href="/"> Check this shit out too --></a>
+                  <a href="/ExperienceAndSkills"> Learn more, and check out my resume --></a>
                 </Typography>
               </Stack>
           </>
