@@ -1,6 +1,5 @@
 import "./style.css";
-import React, { useState } from "react";
-// import styled from "styled-components";
+import React from "react";
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
 import Vid from "../../files/practiceVideo.mp4";
@@ -12,11 +11,6 @@ import Vid from "../../files/practiceVideo.mp4";
 
 
 function Main () {
-  const [isVideoLoaded, setIsVideoLoaded] = useState(false);
-  const onLoadedData = () => {
-    setIsVideoLoaded(true);
-  };
-
   return (
       <div className="main">
         <video className="home-video" autoPlay loop muted>

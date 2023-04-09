@@ -1,93 +1,136 @@
 import React from "react";
-import { useTheme } from '@mui/material/styles';
-import Container from '@mui/material/Container';
+// import { useTheme } from '@mui/material/styles';
 import Typography from '@mui/material/Typography';
 import Stack from '@mui/material/Stack';
-import Card from '@mui/material/Card';
-import CardContent from "@material-ui/core/CardContent";
-import CardHeader from "@material-ui/core/CardHeader";
 import Grid from '@mui/material/Grid';
-import Divider from "@material-ui/core/Divider";
 import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
 import Paper from '@mui/material/Paper';
-import MobileStepper from '@mui/material/MobileStepper';
-import KeyboardArrowLeft from '@mui/icons-material/KeyboardArrowLeft';
-import KeyboardArrowRight from '@mui/icons-material/KeyboardArrowRight';
-import SwipeableViews from 'react-swipeable-views';
-import { autoPlay } from 'react-swipeable-views-utils';
-import { purple } from '@mui/material/colors';
 import "./style.css";
 
 // TODO:
 // Screen Shot and add in multiple photos (dropbox folder for links?)
 // Add links, title, description
 
+//https://codesandbox.io/s/1tj5pm?file=/demo.js
+
 const projects = [
   {
-    project_title: "Project1",
-    project_description: "Quisque porta bibendum augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim",
-    urlLive: "URL",
-    urlGithub: "URL",
-    urlFigma: "URL",
-    imgPath: "https://images.unsplash.com/photo-1537944434965-cf4679d1a598?auto=format&fit=crop&w=400&h=250&q=60"
+    id: "1",
+    project_title: "Rushdown Revolt Store",
+    project_description: "A store for the most electric, combo-centric, and expressive fighting game. Check out the Closed Beta Supporter Pack: 'Keep on Rushing while Team Vortex prepares the game for relaunch'",
+    textLive: "Live Link",
+    urlLive: "https://store.rushdownrevolt.com/",
+    textGithub: "View Source Code",
+    urlGithub: "https://github.com/Vortex-Rising/rushdown-revolt-website",
+    textFigma: "Figma Design",
+    urlFigma: "",
+    imgPath: require("../../files/RDR.png"),
+    extra: ""
   },
   {
-    project_title: "Project2",
-    project_description: "Quisque porta bibendum augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim",
-    urlLive: "URL",
-    urlGithub: "URL",
-    urlFigma: "URL",
-    imgPath: "https://thumbs.dreamstime.com/b/beautiful-rain-forest-ang-ka-nature-trail-doi-inthanon-national-park-thailand-36703721.jpg"
+    id: "2",
+    project_title: "Masion de V Entertainment",
+    project_description: "Explore high-end spectacle and thematic costuming, to champagne skirts, roaming dessert tables, and specialty circus artists, Maison de V is the WOW factor you've been looking for!",
+    textLive: "Live Link",
+    urlLive: "https://www.vmaisonv.com/",
+    textGithub: "View Source Code",
+    urlGithub: "",
+    textFigma: "Figma Design",
+    urlFigma: "",
+    imgPath: require("../../files/MDV.png"),
+    extra: "Squarespace Made"
   },
   {
-    project_title: "Project3",
-    project_description: "Quisque porta bibendum augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim",
-    urlLive: "URL",
-    urlGithub: "URL",
-    urlFigma: "URL",
-    imgPath: "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=400&h=250"
+    id: "3",
+    project_title: "Teza Talks",
+    project_description: "Enter the world of TEZA, a pure rockstar and true electric soul from the Seattle area. Find tour dates, and locations here. Make sure to follow her social media links to stay up to date.",
+    textLive: "Live link",
+    urlLive: "https://www.tezatalks.com/",
+    textGithub: "View Source Code",
+    urlGithub: "",
+    textFigma: "Figma Design",
+    urlFigma: "",
+    imgPath: require("../../files/TT.png"),
+    extra: "Squarespace Made"
   },
   {
-    project_title: "Project4",
-    project_description: "Quisque porta bibendum augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim",
-    urlLive: "URL",
-    urlGithub: "URL",
-    urlFigma: "URL",
-    imgPath:         "https://images.unsplash.com/photo-1512341689857-198e7e2f3ca8?auto=format&fit=crop&w=400&h=250&q=60"
+    id: "4",
+    project_title: "Daniel Harm",
+    project_description: "Take a look at Daniel Harm's beautiful cinematography, build from his dedication as an athlete, wilderness & rope exploration, set experimentation, and artisan stone-work.",
+    textLive: "Live link",
+    urlLive: "https://www.danielharm.com/",
+    textGithub: "View Source Code",
+    urlGithub: "",
+    textFigma: "Figma Design",
+    urlFigma: "",
+    imgPath: require("../../files/DH.png"),
+    extra: "Squarespace Made"
   },
   {
-    project_title: "Project5",
-    project_description: "Quisque porta bibendum augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim",
-    urlLive: "URL",
-    urlGithub: "URL",
-    urlFigma: "URL",
-    imgPath: ""
+    id: "5",
+    project_title: "Kre8ore",
+    project_description: "This site will share with the world the musical masterpieces of Zach Kendall, a producer currently located in Seattle, with a unique ear and outstanding talent for guitar.",
+    textLive: "Coming Soon",
+    // urlLive: "",
+    textGithub: "View Source Code",
+    urlGithub: "",
+    textFigma: "Figma Design",
+    urlFigma: "",
+    imgPath: require("../../files/K.jpg"),
+    extra: "222"
   },
   {
-    project_title: "Project6",
-    project_description: "Quisque porta bibendum augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim",
-    urlLive: "URL",
-    urlGithub: "URL",
-    urlFigma: "URL",
-    imgPath: ""
+    id: "6",
+    project_title: "Art from a Gem",
+    project_description: "A personal store and virtual gallery to show case art made by yours truly, Amethyst White. Currently in the design phase, check out my figma link below to see the vison!",
+    textLive: "Coming Soon",
+    // urlLive: "",
+    textGithub: "View Source Code",
+    urlGithub: "",
+    textFigma: "Figma Design",
+    urlFigma: "https://www.figma.com/file/bQxI0QpgwQuGM9R0AgI8zC/Art-From-A-Gem?t=3nkW3LIqxuTcpjcY-1",
+    imgPath: require("../../files/AFAG.png"),
+    extra: ""
   },
   {
-    project_title: "Project7",
-    project_description: "Quisque porta bibendum augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim",
-    urlLive: "URL",
-    urlGithub: "URL",
-    urlFigma: "URL",
-    imgPath: ""
+    id: "7",
+    project_title: "Coin Creatif",
+    project_description: "This is an application for artist and creative types. It is a platform to market handmade items with the ability to post new items and checkout items as well once you have logged into your account.",
+    textLive: "Under Construction",
+    // urlLive: "",
+    textGithub: "View Source Code",
+    urlGithub: "https://github.com/elizabethbrandt/coincreatif",
+    textFigma: "Figma Design",
+    urlFigma: "https://www.figma.com/file/NaU5Fx3mdIDPiWIrLzwzOL/Coin-Creatif?node-id=50%3A0&t=3nkW3LIqxuTcpjcY-1",
+    imgPath: require("../../files/CC.png"),
+    extra: ""
   },
   {
-    project_title: "Project8",
-    project_description: "Quisque porta bibendum augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim",
-    urlLive: "URL",
-    urlGithub: "URL",
-    urlFigma: "URL",
-    imgPath: ""
+    id: "8",
+    project_title: "Elixirs and Mixers",
+    project_description: "A dream for a master at craft cocktails. Display recipes and photos of your creations, new and modified classics while also showcasing your personal experience behind the bar.",
+    textLive: "Under Construction",
+    // urlLive: "",
+    textGithub: "View Source Code",
+    urlGithub: "https://github.com/Am-White/ElixirsandMixers",
+    textFigma: "Figma Design",
+    urlFigma: "https://www.figma.com/file/3E4kbysaWCi0vZe41vVcID/Elixirs-and-Mixers?t=3nkW3LIqxuTcpjcY-1",
+    imgPath: require("../../files/EAM.png"),
+    extra: ""
+  },
+  {
+    id: "9",
+    project_title: "NASA-Search-Engine",
+    project_description: "NASA Image Search Engine is a responsive web app that displays images and information about space, stars and planets. This app uses two NASA API's and one Wikipedia API.",
+    textLive: "Under Constuction",
+    // urlLive: "",
+    textGithub: "View Source Code",
+    urlGithub: "https://github.com/Am-White/Nasa-Search-Engine",
+    textFigma: "Figma Design",
+    urlFigma: "",
+    imgPath: require("../../files/NSE.png"),
+    extra: ""
   },
 ];
 
@@ -98,9 +141,10 @@ const Item = styled(Paper)(({ theme }) => ({
   padding: theme.spacing(1),
   textAlign: 'center',
   color: theme.palette.text.secondary,
+  boxShadow: '5px 8px 5px 5px rgb(30, 29, 29, 0.7)'
 }));
 
-const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
+// const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
 // const CustomButton = styled(Button)(({ theme }) => ({
 //   color: theme.palette.getContrastText(purple[400]),
@@ -112,7 +156,7 @@ const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
 function ProjectCard() {
 
-  const theme = useTheme();
+  // const theme = useTheme();
   // const [activeStep, setActiveStep] = React.useState(0);
   // const maxSteps = projects.length;
 
@@ -131,7 +175,7 @@ function ProjectCard() {
     return(
     projects.map(row => (
       <>
-      <Grid item xs={12} sm={6} md={4} >
+      <Grid item xs={12} sm={6} md={4}>
         <Item >
           <Box sx={{ maxWidth: 600, flexGrow: 1 }}>
           {/* <AutoPlaySwipeableViews
@@ -141,7 +185,7 @@ function ProjectCard() {
             enableMouseEvents
           > */}
             {/* {projects.map((step, index) => ( */}
-              <div >
+              <div key={row.id}>
                 {/* {Math.abs(activeStep - index) <= 1 ? ( */}
                   <Box
                     component="img"
@@ -191,24 +235,41 @@ function ProjectCard() {
           /> */}
         </Box>
           <div className="card-text">
-            <Typography variant="h4" style={{ fontFamily: 'Bebas Neue, cursive', letterSpacing: '1px'}}>{row.project_title}</Typography>
+            <Typography variant="h4" style={{ fontFamily: 'Bebas Neue, cursive', letterSpacing: '1px', color: 'black'}}>{row.project_title}</Typography>
             <Typography variant="body1" style={{ fontFamily: 'Bebas Neue, cursive', letterSpacing: '1px' }}>{row.project_description}</Typography>
           </div>
           <div className="card-btns">
-            <Stack spacing={2}className="card-live-btn">
+            <Stack spacing={2} className="card-live-btn">
             <div >
-              <button className="card-live-border" style={{buttonfontFamily: 'Bebas Neue, cursive', letterSpacing: '1px'}}> Live Link </button>
-              <div class="fake-border left"></div>
-              <div class="fake-border top"></div>
-              <div class="fake-border right"></div>
-              <div class="fake-border bottom"></div>
+              <a href={row.urlLive} target="_blank">
+                <button className="card-live-border" style={{buttonfontFamily: 'Bebas Neue, cursive', letterSpacing: '1px'}}> 
+                  {row.textLive} 
+                </button>
+              </a>
+              <div className="fake-border left"></div>
+              <div className="fake-border top"></div>
+              <div className="fake-border right"></div>
+              <div className="fake-border bottom"></div>
             </div>
                       
             </Stack>
-            <br/>
-            <Stack direction="row" spacing={2}>
-              <button className="card-btn" style={{ fontFamily: 'Bebas Neue, cursive', letterSpacing: '1px'}}> GitHub Code </button>
-              <button className="card-btn" style={{ fontFamily: 'Bebas Neue, cursive', letterSpacing: '1px'}}> Figma Design </button>
+            
+            <Stack direction="row" spacing={2} sx={{ marginTop: "10px", marginBottom: "5px"}} >
+              {row.urlGithub && !!row.urlGithub.length && 
+              <a className="card-btn" href={row.urlGithub} target="_blank" style={{ fontFamily: 'Bebas Neue, cursive', letterSpacing: '2.5px'}}> 
+                {row.textGithub} 
+              </a>
+              }
+              {row.urlFigma && !!row.urlFigma.length && 
+              <a className="card-btn" href={row.urlFigma} target="_blank" style={{ fontFamily: 'Bebas Neue, cursive', letterSpacing: '2.5px'}}> 
+                {row.textFigma}
+              </a>
+              }
+              {row.extra && !!row.extra.length && 
+              <Typography className="card-btn-extra" style={{ fontFamily: 'Bebas Neue, cursive', letterSpacing: '2.5px', fontSize: "14px" }}> 
+                {row.extra}
+              </Typography>
+              }
             </Stack>
           </div>
         </Item>

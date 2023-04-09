@@ -1,12 +1,9 @@
 import "./style.css";
 import React, { useState, useEffect } from 'react';
 import Stack from '@mui/material/Stack';
-import MenuIcon from '@mui/icons-material/Menu';
 import MenuDrawer from './menuDrawer.jsx';
-//import {  } from '@material-ui/core';
 
 // TODO:
-// add in logo to top (still clickable)?
 // clean up code + css
 
 function Header () {
