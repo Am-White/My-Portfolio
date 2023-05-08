@@ -18,7 +18,6 @@
 .home-video{
   object-fit: cover;
   display: flex;
-  min-width: 100vw;
   min-height: 100vh;
   position: fixed;
   top: 0;
