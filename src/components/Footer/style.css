@@ -4,21 +4,18 @@
   display: flex;
   align-items: center;
   text-align: center;
-  justify-content: space-between;
+  
   font-size: calc(10px + 2vmin);
   color: white;
-  position: sticky;
-  padding: 20px;
+  position: relative;
+  padding-left: 20px;
 }
 
 .footer-links{ 
-  padding-left: 10px;
-  padding-right: 10px;
   text-decoration: none;
   font-size: 20px;
   color: white;
   letter-spacing: 8px;
-  
 }
 
 .footer-links:hover{
@@ -26,5 +23,10 @@
 }
 
 .footer-grid{
- margin-bottom: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.footer-link-grid{
+  padding-left: 20px;
+  padding-right: 20px;
 }

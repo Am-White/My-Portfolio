@@ -12,9 +12,9 @@ import Vid from "../../files/practiceVideo.mp4";
 
 function Main () {
   return (
-      <div className="main">
-        <video className="home-video" autoPlay loop muted>
-           <source src={Vid} type="video/mp4" autoPlay loop muted/> 
+      <div className="main" >
+        <video className="home-video" type="video/mp4" autoPlay loop muted playsinline>
+           <source src={Vid} type="video/mp4" autoPlay loop muted playsinline/> 
         </video>
 
         <Container className="main-header" >

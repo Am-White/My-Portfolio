@@ -16,11 +16,11 @@ function Footer () {
           <SocialIcon bgColor="lightGrey" url="https://www.github.com/Am-White" style={{ marginLeft: '15px', marginRight: '15px'}}/>
           <SocialIcon bgColor="lightGrey" url="https://www.linkedin.com/in/amethyst-white/" style={{ marginLeft: '15px', marginRight: '15px'}}/>
         </Grid>  
-        <Grid item className="footer-grid" style={{ letterSpacing: {xs: '1px'}}}>
-          <a href="/" className="footer-links"> Home</a> 
-          <a href="/AboutMe" className="footer-links"> About</a> 
-          <a href="/ContactInfo" className="footer-links"> Contact</a> 
-          <a href="/" className="footer-links"> Terms</a> 
+        <Grid item className="footer-link-grid" style={{ letterSpacing: {xs: '1px'}}}>
+          <a href="/" className="footer-links"> Home -</a> 
+          <a href="/AboutMe" className="footer-links"> About -</a> 
+          <a href="/ContactInfo" className="footer-links"> Contact -</a> 
+          <a href="/" className="footer-links"> Terms -</a> 
           <a href="/" className="footer-links"> Privacy Policy</a> 
         </Grid> 
         <Grid item className="footer-grid" xs={12} >
