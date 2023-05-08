@@ -19,7 +19,7 @@ function Main () {
           src={Vid}
           autoPlay={true}
           muted={true}
-          
+          playsinline={true}
         />
         {/* <video autoPlay="autoplay" loop="loop" muted playsinline className="home-video" >
            <source src={Vid} type="video/mp4"/> 
