@@ -13,7 +13,7 @@ import Vid from "../../files/practiceVideo.mp4";
 function Main () {
   return (
       <div className="main" >
-        <video className="home-video" autoPlay loop muted playsinline>
+        <video autoPlay="autoplay" loop="loop" muted playsinline className="home-video" >
            <source src={Vid} type="video/mp4"/> 
         </video>
 
