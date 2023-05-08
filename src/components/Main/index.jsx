@@ -13,7 +13,7 @@ import Vid from "../../files/practiceVideo.mp4";
 
 function Main () {
   return (
-      <div className="main" style={{ minHeight: {xs: '10vh'}}}>
+      <div className="main">
         <VideoPlayer
           className="home-video"
           type="video/mp4"
