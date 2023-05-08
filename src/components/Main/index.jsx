@@ -2,6 +2,7 @@ import "./style.css";
 import React from "react";
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
+import VideoPlayer from "react-background-video-player";
 import Vid from "../../files/practiceVideo.mp4";
 
 // TODO:
@@ -13,9 +14,15 @@ import Vid from "../../files/practiceVideo.mp4";
 function Main () {
   return (
       <div className="main" >
-        <video autoPlay="autoplay" loop="loop" muted playsinline className="home-video" >
+        <VideoPlayer
+          className="home-video"
+          src={Vid}
+          autoPlay={true}
+          muted={true}
+        />
+        {/* <video autoPlay="autoplay" loop="loop" muted playsinline className="home-video" >
            <source src={Vid} type="video/mp4"/> 
-        </video>
+        </video> */}
 
         <Container className="main-header" >
           <Typography className="main-p1" variant="h1" style={{ fontFamily: 'Bebas Neue, cursive', letterSpacing: '3px'}}>Amethyst White</Typography>
