@@ -4,7 +4,7 @@
 
 .main {
   background-color: #282c34;
-  height: 85vh;
+  min-height: 85vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -17,8 +17,9 @@
 
 .home-video{
   object-fit: cover;
-  width: 100vw;
-  height: 100vh;
+  display: flex;
+  min-width: 100vw;
+  min-height: 100vh;
   position: fixed;
   top: 0;
   left: 0;
