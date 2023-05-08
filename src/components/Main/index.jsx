@@ -16,14 +16,12 @@ function Main () {
       <div className="main" >
         <VideoPlayer
           className="home-video"
+          type="video/mp4"
           src={Vid}
           autoPlay={true}
           muted={true}
           playsinline={true}
         />
-        {/* <video autoPlay="autoplay" loop="loop" muted playsinline className="home-video" >
-           <source src={Vid} type="video/mp4"/> 
-        </video> */}
 
         <Container className="main-header" >
           <Typography className="main-p1" variant="h1" style={{ fontFamily: 'Bebas Neue, cursive', letterSpacing: '3px'}}>Amethyst White</Typography>
